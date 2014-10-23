@@ -1,0 +1,11 @@
+<div class="checkbox">
+   <label class="customCheckBox">
+      <input type="checkbox" value="All" ng-change="handleAllCB()" ng-model="all">
+      All
+   </label>
+</div>
+<div class="checkbox" ng-repeat="(key, value) in items">
+   <label class="customCheckBox">
+      <input type="checkbox" checklist-model="cbArr" checklist-value="key" value="{{key}}">{{value}}
+   </label>
+</div>
